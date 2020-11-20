@@ -15,6 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // setting static files
 app.use(express.static('public'))
 
+//設定session相關參數
 app.use(expSession({
   resave: false,
   saveUninitialized: true, // 是否儲存未初始化的會話

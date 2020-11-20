@@ -4,9 +4,6 @@ const router = express.Router()
 
 // routes setting
 router.get('/', (req, res) => {
-  console.log(req.session)
-  console.log(req.session.firstName)
-  console.log(req.sessionID)
   //session 有紀錄使用者名稱的話
   if (req.session.firstName) {
     const user = req.session
